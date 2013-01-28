@@ -1,0 +1,24 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "root": "alice",
+    "description": "test for alice",
+    "homepage": "",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "license": "MIT",
+    "dependencies": {
+        "button": "alice/button/1.0.0/button",
+        "tipbox": "alice/tipbox/1.0.0/tipbox"
+    },
+    "tests": ["example"],
+    "output": {
+        "example.css": "."
+    }
+}
