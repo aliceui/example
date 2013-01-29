@@ -1,7 +1,11 @@
-/* alice.example 样式模块 */
+@import url('button');
 
-@charset "utf-8";
+@import url('tipbox');
+
+/* alice.example 样式模块 */
 
 .ui-example {
 
 }
+
+
