@@ -7,15 +7,15 @@
     "author": "",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/aliceui/example"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/aliceui/example/issues"
     },
     "license": "MIT",
     "dependencies": {
-        "button": "alice/button/1.0.0/button",
-        "tipbox": "alice/tipbox/1.0.0/tipbox"
+        "button": "alice/button/1.0.0/button.css",
+        "tipbox": "alice/tipbox/1.0.0/tipbox.css"
     },
     "tests": ["example"],
     "output": {
