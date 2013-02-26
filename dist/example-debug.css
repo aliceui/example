@@ -5,12 +5,7 @@
 
 
 
-/** inner.css **/
-
-.xxx {
-    display: none;
-}
-
+@import url('./inner.css');
 
 /* alice.example 样式模块 */
 

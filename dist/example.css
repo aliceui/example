@@ -1,1 +1,1 @@
-.xxx{display:none}.ui-example{}
+@import url('./inner.css');.ui-example{}

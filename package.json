@@ -19,6 +19,7 @@
     },
     "tests": ["example"],
     "output": {
-        "example.css": "."
+        "example.css": ".",
+        "function.js": "."
     }
 }
