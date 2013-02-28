@@ -24,3 +24,8 @@ Just for test purpose!
         <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
     </div>
 </div>
+
+````js
+seajs.use(['./dist/function-debug.js'], function() {
+});
+````
