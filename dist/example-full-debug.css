@@ -1,221 +1,6 @@
 
-/** alice/button/1.0.0/button.css **/
-.ui-button * {
-    margin:0;
-    padding:0;
-}
-
-.ui-button {
-    display: inline-block;
-    *display: inline;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    font-family: verdana, Hiragino Sans GB;
-    font-size: 14px;
-    font-weight: bold;    
-    border-radius: 2px;    
-    padding: 0 20px;
-    *zoom: 1;
-}
-
-.ui-button .ui-button-text {
-    background: none;
-    padding: 0;
-    height: auto;
-    line-height: auto;
-}
-
-.ui-button:hover {
-    text-decoration: none;    
-}
-
-input.ui-button-text, button.ui-button-text {
-    *vertical-align: top; /* for a ie7 bug */
-    font-family: Hiragino Sans GB;
-}
-
-.ui-button-lorange,
-.ui-button-morange,
-.ui-button-sorange {
-    border:1px solid #E5810E;
-    color:#fff;
-
-    background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#F5A620), to(#F09611));
-    background: -moz-linear-gradient(top, #F5A620, #F09611);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5A620', endColorstr='#F09611');
-    background:-o-linear-gradient(top, #F5A620, #F09611);
-    background: linear-gradient(top, #F5A620, #F09611);
-    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.3) inset;
-}
-
-.ui-button-lorange:hover,
-.ui-button-morange:hover,
-.ui-button-sorange:hover {
-    background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#F7B73B), to(#F4A626));
-    background: -moz-linear-gradient(top, #F7B73B, #F4A626);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F7B73B', endColorstr='#F4A626');
-    background:-o-linear-gradient(top, #F7B73B, #F4A626);
-    background: linear-gradient(top, #F7B73B, #F4A626);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
-}
-
-a.ui-button-lorange,
-a.ui-button-morange,
-a.ui-button-sorange {
-    color:#fff;    
-}
-.ui-button-lorange {
-    line-height:33px;
-    height:33px;
-}
-
-.ui-button-morange {
-    line-height:29px;
-    height:29px;
-}
-
-.ui-button-sorange {
-    padding: 0 12px;
-    line-height:23px;
-    height:23px;
-    font-size:12px;
-}
-
-.ui-button-lwhite,
-.ui-button-mwhite,
-.ui-button-swhite {
-    border:1px solid #B3B3B3;
-    color:#595959;
-    background-color: #F2F2F2;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#ECECEC));
-    background: -moz-linear-gradient(top, #FEFEFE, #ECECEC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#ECECEC');
-    background:-o-linear-gradient(top, #FEFEFE, #ECECEC);
-    background: linear-gradient(top, #FEFEFE, #ECECEC);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.33) inset;
-}
-
-.ui-button-lwhite:hover,
-.ui-button-mwhite:hover,
-.ui-button-swhite:hover {
-    border: 1px solid #999;
-    background-color: #F6F6F6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#F0F0F0));
-    background: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F0F0F0');
-    background:-o-linear-gradient(top, #FEFEFE, #F0F0F0);
-    background: linear-gradient(top, #FEFEFE, #F0F0F0);
-}
-
-a.ui-button-lwhite,
-a.ui-button-mwhite,
-a.ui-button-swhite {
-    color:#595959;    
-}
-.ui-button-lwhite {
-    line-height:33px;
-    height:33px;
-}
-
-.ui-button-mwhite {
-    line-height:29px;
-    height:29px;
-}
-
-.ui-button-swhite {
-    line-height:23px;
-    height:23px;
-    padding:0 12px;
-    font-size:12px;
-}
-
-.ui-button-ldisable,
-.ui-button-mdisable,
-.ui-button-sdisable {
-    border: none;
-    background: #D4D4D4;
-    cursor: text;
-    color:#fff;
-    text-shadow: 0 -1px 1px #aaa;    
-}
-
-a.ui-button-ldisable,
-a.ui-button-mdisable,
-a.ui-button-sdisable {
-    color:#fff;
-}
-.ui-button-ldisable {
-    line-height:35px;
-    height:35px;
-}
-
-.ui-button-mdisable {
-    line-height:31px;
-    height:31px;
-}
-
-.ui-button-sdisable {
-    line-height:25px;
-    height:25px;
-    padding:0 12px;
-    font-size:12px;
-}
-
-
-.ui-button-lblue,
-.ui-button-mblue,
-.ui-button-sblue {
-    border:none;
-    color:#fff;
-
-    background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#3283C6), to(#0A6695));
-    background: -moz-linear-gradient(top, #3283C6, #0A6695);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3283C6', endColorstr='#0A6695');
-    background:-o-linear-gradient(top, #3283C6, #0A6695);
-    background: linear-gradient(top, #3283C6, #0A6695);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.25) inset;
-}
-
-.ui-button-lblue:hover,
-.ui-button-mblue:hover,
-.ui-button-sblue:hover {
-    background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3295E5), to(#0C689B));
-    background: -moz-linear-gradient(top, #3295E5, #0C689B);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3295E5', endColorstr='#0C689B');
-    background:-o-linear-gradient(top, #3295E5, #0C689B);
-    background: linear-gradient(top, #3295E5, #0C689B);
-}
-
-a.ui-button-lblue,
-a.ui-button-mblue,
-a.ui-button-sblue {
-    color:#fff;    
-}
-.ui-button-lblue {
-    line-height:33px;
-    height:33px;
-}
-
-.ui-button-mblue {
-    line-height:29px;
-    height:29px;
-}
-
-.ui-button-sblue {
-    padding: 0 12px;
-    line-height:23px;
-    height:23px;
-    font-size:12px;
-}
-
-
 /** alice/tipbox/1.0.0/tipbox.css **/
+
 /* alice.tipbox 样式模块 */
 
 @charset "utf-8";
@@ -343,12 +128,326 @@ a.ui-button-sblue {
     _filter:chroma(color=tomato);
 }
 
+
+/** alice/base/1.0.0/base.css **/
+/* alice.base 样式模块 */
+
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color:#000;background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin:0;padding:0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,Hiragino Sans GB,\5b8b\4f53;
+}
+input,select,textarea {
+    font-size:100%;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+    border-collapse:collapse;border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+    text-align:inherit;
+}
+
+/* 去除默认边框 */
+fieldset,img {
+    border:0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+    display:block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym {
+    border:0;font-variant:normal;
+}
+
+/* 一致的 del 样式 */
+del {
+    text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style:normal;
+    font-weight:500;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+    list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+    text-align:left;
+}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:500;
+}
+
+q:before,q:after {
+    content:'';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+    text-decoration:underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+    text-decoration:none;
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+    display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 简单的渐变 */
+.fn-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background: linear-gradient(top, #fcfcfc, #f1f1f1);
+}
+
+/* 浅色的渐变 */
+.fn-linear-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(top, #fcfcfc, #f9f9f9);
+}
+
+/* 人民币符号 */
+.fn-rmb {
+    font-size: .75em;
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+
+
+/* chrome 下字体过小的问题 */
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+
+
+/** alice/button/1.0.0/button.css **/
+
+
+.ui-button * {
+    margin:0;
+    padding:0;
+}
+
+.ui-button {
+    display: inline-block;
+    *display: inline;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: verdana, Hiragino Sans GB;
+    font-size: 14px;
+    font-weight: bold;    
+    border-radius: 2px;    
+    padding: 0 20px;
+    *zoom: 1;
+}
+
+.ui-button .ui-button-text {
+    background: none;
+    padding: 0;
+    height: auto;
+    line-height: auto;
+}
+
+.ui-button:hover {
+    text-decoration: none;    
+}
+
+input.ui-button-text, button.ui-button-text {
+    *vertical-align: top; /* for a ie7 bug */
+    font-family: Hiragino Sans GB;
+}
+
+/** ui-button-orange.css **/
+
+.ui-button-lorange,
+.ui-button-morange,
+.ui-button-sorange {
+    border:1px solid #E5810E;
+    color:#fff;
+
+    background-color: #F5AA2B;    
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5A620), to(#F09611));
+    background: -moz-linear-gradient(top, #F5A620, #F09611);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5A620', endColorstr='#F09611');
+    background:-o-linear-gradient(top, #F5A620, #F09611);
+    background: linear-gradient(top, #F5A620, #F09611);
+    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.3) inset;
+}
+
+.ui-button-lorange:hover,
+.ui-button-morange:hover,
+.ui-button-sorange:hover {
+    background-color: #F5AA2B;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7B73B), to(#F4A626));
+    background: -moz-linear-gradient(top, #F7B73B, #F4A626);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F7B73B', endColorstr='#F4A626');
+    background:-o-linear-gradient(top, #F7B73B, #F4A626);
+    background: linear-gradient(top, #F7B73B, #F4A626);
+    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
+}
+
+a.ui-button-lorange,
+a.ui-button-morange,
+a.ui-button-sorange {
+    color:#fff;    
+}
+.ui-button-lorange {
+    line-height:33px;
+    height:33px;
+}
+
+.ui-button-morange {
+    line-height:29px;
+    height:29px;
+}
+
+.ui-button-sorange {
+    padding: 0 12px;
+    line-height:23px;
+    height:23px;
+    font-size:12px;
+}
+
+
+/** ui-button-disable.css **/
+
+.ui-button-ldisable,
+.ui-button-mdisable,
+.ui-button-sdisable {
+    border: none;
+    background: #D4D4D4;
+    cursor: text;
+    color:#fff;    
+}
+
+a.ui-button-ldisable,
+a.ui-button-mdisable,
+a.ui-button-sdisable {
+    color:#fff;
+}
+.ui-button-ldisable {
+    line-height:35px;
+    height:35px;
+}
+
+.ui-button-mdisable {
+    line-height:31px;
+    height:31px;
+}
+
+.ui-button-sdisable {
+    line-height:25px;
+    height:25px;
+    padding:0 12px;
+    font-size:12px;
+}
+
+
+
+
+
 /** alice/example/1.0.0/example.css **/
 
 
 
 
-@import url('./inner.css');
+/** inner.css **/
+
+.xxx {
+    display: none;
+}
+
+
+
 
 /* alice.example 样式模块 */
 
