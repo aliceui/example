@@ -1,6 +1,5 @@
 /*! define alice/example/1.0.0/example-debug.css */
 /*! block alice/button/1.0.0/button-debug.css */
-/*! block alice/button/1.0.0/ui-button-debug.css */
 .ui-button * {
     margin:0;
     padding:0;
@@ -13,13 +12,13 @@
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
-    font-family: "Verdana", "Hiragino Sans GB", sans-serif;
+    font-family: verdana, Hiragino Sans GB;
     font-size: 14px;
-    font-weight: bold;
-    border-radius: 2px;
+    font-weight: bold;    
+    border-radius: 2px;    
     padding: 0 20px;
     *zoom: 1;
-    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */    
 }
 
 .ui-button .ui-button-text {
@@ -30,48 +29,59 @@
 }
 
 .ui-button:hover {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 input.ui-button-text, button.ui-button-text {
     *vertical-align: top; /* for a ie7 bug */
-    font-family: "Hiragino Sans GB", sans-serif;
+    font-family: Hiragino Sans GB;
 }
-/*! endblock alice/button/1.0.0/ui-button-debug.css */
+
+.ui-button:active {
+    position: relative;
+    top: 1px;
+}
 
 /*! block alice/button/1.0.0/ui-button-orange-debug.css */
 .ui-button-lorange,
 .ui-button-morange,
 .ui-button-sorange {
-    border:1px solid #E5810E;
-    color:#fff;
-
+    color: #fff;
+    border:1px solid #F67600;
     background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#F5A620), to(#F09611));
-    background: -moz-linear-gradient(top, #F5A620, #F09611);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5A620', endColorstr='#F09611');
-    background:-o-linear-gradient(top, #F5A620, #F09611);
-    background: linear-gradient(top, #F5A620, #F09611);
-    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.3) inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA600), to(#FE9200));
+    background: -moz-linear-gradient(top, #FFA600, #FE9200);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA600', endColorstr='#FE9200');
+    background:-o-linear-gradient(top, #FFA600, #FE9200);
+    background: linear-gradient(top, #FFA600, #FE9200);
+    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.4) inset;
 }
 
 .ui-button-lorange:hover,
 .ui-button-morange:hover,
 .ui-button-sorange:hover {
+    border: 1px solid #F26600;
     background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#F7B73B), to(#F4A626));
-    background: -moz-linear-gradient(top, #F7B73B, #F4A626);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F7B73B', endColorstr='#F4A626');
-    background:-o-linear-gradient(top, #F7B73B, #F4A626);
-    background: linear-gradient(top, #F7B73B, #F4A626);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFB91C), to(#FFA700));
+    background: -moz-linear-gradient(top, #FFB91C, #FFA700);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB91C', endColorstr='#FFA700');
+    background:-o-linear-gradient(top, #FFB91C, #FFA700);
+    background: linear-gradient(top, #FFB91C, #FFA700);
     box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
 }
 
 a.ui-button-lorange,
 a.ui-button-morange,
-a.ui-button-sorange {
+a.ui-button-sorange,
+a.ui-button-lorange:hover,
+a.ui-button-morange:hover,
+a.ui-button-sorange:hover,
+a.ui-button-lorange:active,
+a.ui-button-morange:active,
+a.ui-button-sorange:active {
     color:#fff;    
 }
+
 .ui-button-lorange {
     line-height:33px;
     height:33px;
@@ -97,11 +107,11 @@ a.ui-button-sorange {
     border:1px solid #B3B3B3;
     color:#595959;
     background-color: #F2F2F2;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#ECECEC));
-    background: -moz-linear-gradient(top, #FEFEFE, #ECECEC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#ECECEC');
-    background:-o-linear-gradient(top, #FEFEFE, #ECECEC);
-    background: linear-gradient(top, #FEFEFE, #ECECEC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EBEBEB));
+    background: -moz-linear-gradient(top, #FFFFFF, #EBEBEB);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBEBEB');
+    background:-o-linear-gradient(top, #FFFFFF, #EBEBEB);
+    background: linear-gradient(top, #FFFFFF, #EBEBEB);
     box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.33) inset;
 }
 
@@ -110,18 +120,25 @@ a.ui-button-sorange {
 .ui-button-swhite:hover {
     border: 1px solid #999;
     background-color: #F6F6F6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#F0F0F0));
-    background: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F0F0F0');
-    background:-o-linear-gradient(top, #FEFEFE, #F0F0F0);
-    background: linear-gradient(top, #FEFEFE, #F0F0F0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F0F0));
+    background: -moz-linear-gradient(top, #FFFFFF, #F0F0F0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F0F0F0');
+    background:-o-linear-gradient(top, #FFFFFF, #F0F0F0);
+    background: linear-gradient(top, #FFFFFF, #F0F0F0);
 }
 
 a.ui-button-lwhite,
 a.ui-button-mwhite,
-a.ui-button-swhite {
+a.ui-button-swhite,
+a.ui-button-lwhite:active,
+a.ui-button-mwhite:active,
+a.ui-button-swhite:active,
+a.ui-button-lwhite:hover,
+a.ui-button-mwhite:hover,
+a.ui-button-swhite:hover {
     color:#595959;    
 }
+
 .ui-button-lwhite {
     line-height:33px;
     height:33px;
@@ -139,6 +156,53 @@ a.ui-button-swhite {
     font-size:12px;
 }
 /*! endblock alice/button/1.0.0/ui-button-white-debug.css */
+
+/*! block alice/button/1.0.0/ui-button-disable-debug.css */
+.ui-button-ldisable,
+.ui-button-mdisable,
+.ui-button-sdisable {
+    color:#fff;    
+    border: none;
+    background: #D4D4D4;
+    cursor: default;
+    text-shadow: 0 -1px 1px #aaa;    
+}
+
+a.ui-button-ldisable,
+a.ui-button-mdisable,
+a.ui-button-sdisable,
+a.ui-button-ldisable:active,
+a.ui-button-mdisable:active,
+a.ui-button-sdisable:active,
+a.ui-button-ldisable:hover,
+a.ui-button-mdisable:hover,
+a.ui-button-sdisable:hover {
+    color:#fff; 
+}
+
+.ui-button-ldisable {
+    line-height:35px;
+    height:35px;
+}
+
+.ui-button-mdisable {
+    line-height:31px;
+    height:31px;
+}
+
+.ui-button-sdisable {
+    line-height:25px;
+    height:25px;
+    padding:0 12px;
+    font-size:12px;
+}
+
+input.ui-button-ldisable,
+input.ui-button-mdisable,
+input.ui-button-sdisable {
+    cursor: default;
+}
+/*! endblock alice/button/1.0.0/ui-button-disable-debug.css */
 
 /*! block alice/button/1.0.0/ui-button-blue-debug.css */
 .ui-button-lblue,
@@ -169,9 +233,16 @@ a.ui-button-swhite {
 
 a.ui-button-lblue,
 a.ui-button-mblue,
-a.ui-button-sblue {
+a.ui-button-sblue,
+a.ui-button-lblue:active,
+a.ui-button-mblue:active,
+a.ui-button-sblue:active,
+a.ui-button-lblue:hover,
+a.ui-button-mblue:hover,
+a.ui-button-sblue:hover {
     color:#fff;    
 }
+
 .ui-button-lblue {
     line-height:33px;
     height:33px;
@@ -189,48 +260,18 @@ a.ui-button-sblue {
     font-size:12px;
 }
 /*! endblock alice/button/1.0.0/ui-button-blue-debug.css */
-
-/*! block alice/button/1.0.0/ui-button-disable-debug.css */
-.ui-button-ldisable,
-.ui-button-mdisable,
-.ui-button-sdisable {
-    border: none;
-    background: #D4D4D4;
-    cursor: text;
-    color:#fff;
-    text-shadow: 0 -1px 1px #aaa;    
-}
-
-a.ui-button-ldisable,
-a.ui-button-mdisable,
-a.ui-button-sdisable {
-    color:#fff;
-}
-.ui-button-ldisable {
-    line-height:35px;
-    height:35px;
-}
-
-.ui-button-mdisable {
-    line-height:31px;
-    height:31px;
-}
-
-.ui-button-sdisable {
-    line-height:25px;
-    height:25px;
-    padding:0 12px;
-    font-size:12px;
-}
-/*! endblock alice/button/1.0.0/ui-button-disable-debug.css */
 /*! endblock alice/button/1.0.0/button-debug.css */
 
 /*! block alice/tipbox/1.0.0/tipbox-debug.css */
 /* alice.tipbox 样式模块 */
+
+@charset "utf-8";
+
 .ui-tipbox {
     position: relative;
     zoom: 1;
     font-size: 12px;
+    line-height: 22px;
 }
 
 .ui-tipbox .ui-tipbox-icon {
@@ -238,18 +279,18 @@ a.ui-button-sdisable {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 20px;
-    left: 46px;
+    top: 22px;
+    left: 48px;
 }
 
 .ui-tipbox-icon .iconfont {
-    font-size: 32px;
+    font-size: 36px;
     position: absolute;
-    top: -4px;
-    left: -6px;
+    top: -7px;
+    left: -7px;
     width: 32px;
     height: 32px;
-    line-height: 34px;
+    line-height: 36px;
     text-shadow: 1px 1px 0 #fff;
 }
 
