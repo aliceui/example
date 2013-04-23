@@ -16,7 +16,7 @@ Just for test purpose!
 
 <div class="ui-tipbox ui-tipbox-message">
     <div class="ui-tipbox-icon">
-        <i class="iconfont" title="提示">&#x00ED;</i>
+        <i class="iconfont" title="提示">&#F046;</i>
     </div>
     <div class="ui-tipbox-content">
         <h3 class="ui-tipbox-title">提示标题</h3>
